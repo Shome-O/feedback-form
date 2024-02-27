@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        #lastname {
+            margin-left: 20px;
+        }
+        #firstname, #lastname {
+            padding: 5px;
+        }
+        #submit {
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(9, 189, 9);
+            color: white;
+            
+        }
+        footer {
+            font-size: smaller;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <label for="first name">Name: </label><br>
+    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+    <input type="text" name="lastname" id="lastname" placeholder="Last Name"><br><br>
+    <label for="rating">Please rate us </label>
+    <select name="rating" id="rating">
+        <option value="1">&#128545</option>
+        <option value="2">&#128577</option>
+        <option value="3">&#128528</option>
+        <option value="4">&#128525</option>
+    </select> <br><br>
+    <fieldset>
+        <legend>Please provide your suggestion here...</legend>
+        <textarea name="suggestion" id="suggestion" cols="60" rows="5"></textarea>
+    </fieldset> <br>
+    <input id="submit" type="submit" value="Submit Feedback">
+    <footer>&copy; 2024. All rights reserved.</footer>
+</html>
